@@ -3,13 +3,13 @@ import { Icon } from "@iconify/react";
 
 const HeroTextContent = () => {
   return (
-    <div className="relative z-10 text-center max-w-2xl mx-auto px-5 mt-24 w-full">
+    <div className="relative z-10 text-center max-w-2xl mx-auto px-5 -mt-40 w-full">
       {/* Bird 1 - Far right, above text */}
       <div
         className="absolute pointer-events-none"
         style={{
-          right: "-80px",
-          top: "-120px",
+          left: "-210px",
+          top: "60px",
           transform: "rotate(-180deg)",
         }}
       >
@@ -24,8 +24,8 @@ const HeroTextContent = () => {
       <div
         className="absolute pointer-events-none"
         style={{
-          left: "-100px",
-          top: "-80px",
+          left: "-30px",
+          top: "120px",
         }}
       >
         <img
@@ -39,8 +39,8 @@ const HeroTextContent = () => {
       <div
         className="absolute pointer-events-none"
         style={{
-          left: "-60px",
-          top: "50%",
+          right: "-120px",
+          top: "80px",
           transform: "translateY(-50%)",
         }}
       >
@@ -55,8 +55,8 @@ const HeroTextContent = () => {
       <div
         className="absolute pointer-events-none"
         style={{
-          left: "-120px",
-          bottom: "-100px",
+          right: "-180px",
+          top: "200px",
         }}
       >
         <img
@@ -66,9 +66,8 @@ const HeroTextContent = () => {
         />
       </div>
 
-
       {/* AI Message Label */}
-      <div className="inline-flex items-center gap-2 bg-white rounded-full p-2">
+      <div className="inline-flex items-center gap-2 bg-white rounded-full pt-[4px] pb-[4px] px-[8px] mb-8">
         <img src="/img/dot-oval.png" className="h-[17px] w-[32px]" />
         <span className="text-xs font-semibold text-blue-start">
           #1 iMessage Automation Tool
@@ -86,7 +85,7 @@ const HeroTextContent = () => {
       </h1>
 
       {/* Description */}
-      <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed max-w-xl mx-auto">
+      <p className="text-base md:text-md text-black mb-8 leading-relaxed max-w-xl mx-auto">
         Coup lets you, your team, or AI workflows send iMessages directly from
         your phone number, running securely on your Mac or Mac Minis.
       </p>

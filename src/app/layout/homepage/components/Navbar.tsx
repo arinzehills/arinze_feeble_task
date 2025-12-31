@@ -3,7 +3,7 @@ import Button from "@components/Button";
 const Navbar = () => {
   return (
     <header className="fixed top-8 left-1/2 -translate-x-1/2 z-50">
-      <div className="flex justify-between items-center px-10 py-3 bg-white rounded-full border border-gray-200 shadow-sm w-[1200px] h-[81px]">
+      <div className="flex justify-between items-center px-10 py-3 bg-white rounded-full border border-gray-200 shadow-sm w-[1200px] h-[70px]">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <img src="/img/logo.png" alt="coup" className="h-6 w-auto" />

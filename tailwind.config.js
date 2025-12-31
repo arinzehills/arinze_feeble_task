@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        "blue-start": "#2255ff",
+        "blue-start": "#007AFF",
         "blue-end": "#1477ff",
         "lighter-blue": "var(--lighter-blue)",
         "lighter-deeper-blue": "var(--lighter-deeper-blue)",
         "accent-color": "var(--accent-color)",
-        "interactive": "var(--interactive-color)",
+        interactive: "var(--interactive-color)",
       },
       backgroundImage: {
         "tab-radial": "radial-gradient(circle at center, #2255ff, #1477ff)",
@@ -37,11 +37,15 @@ export default {
         float1: "float1 6s ease-in-out infinite",
         float2: "float2 7s ease-in-out infinite",
         float3: "float3 8s ease-in-out infinite",
-        "bird-fly-1": "birdSlideIn1 0.8s ease-out forwards, birdFly1 3.5s cubic-bezier(0.71, 0.04, 0.83, 0.67) infinite 0.8s",
-        "bird-fly-2": "birdSlideIn2 0.9s ease-out forwards, birdFly2 3.5s cubic-bezier(0.71, 0.04, 0.83, 0.67) infinite 0.9s",
-        "bird-fly-3": "birdSlideIn3 0.85s ease-out forwards, birdFly3 3.5s cubic-bezier(0.71, 0.04, 0.83, 0.67) infinite 0.85s",
-        "bird-fly-4": "birdSlideIn4 0.95s ease-out forwards, birdFly4 3.5s cubic-bezier(0.71, 0.04, 0.83, 0.67) infinite 0.95s",
-        "cloudSlideIn": "cloudSlideIn 1s ease-out forwards",
+        "bird-fly-1":
+          "birdSlideIn1 0.8s ease-out forwards, birdFly1 3.5s cubic-bezier(0.71, 0.04, 0.83, 0.67) infinite 0.8s",
+        "bird-fly-2":
+          "birdSlideIn2 0.9s ease-out forwards, birdFly2 3.5s cubic-bezier(0.71, 0.04, 0.83, 0.67) infinite 0.9s",
+        "bird-fly-3":
+          "birdSlideIn3 0.85s ease-out forwards, birdFly3 3.5s cubic-bezier(0.71, 0.04, 0.83, 0.67) infinite 0.85s",
+        "bird-fly-4":
+          "birdSlideIn4 0.95s ease-out forwards, birdFly4 3.5s cubic-bezier(0.71, 0.04, 0.83, 0.67) infinite 0.95s",
+        cloudSlideIn: "cloudSlideIn 1s ease-out forwards",
       },
       keyframes: {
         moveUp: {
@@ -125,22 +129,30 @@ export default {
         },
         birdFly1: {
           "0%": { transform: "translateX(0) translateY(0) rotateZ(0deg)" },
-          "50%": { transform: "translateX(30px) translateY(-20px) rotateZ(-5deg)" },
+          "50%": {
+            transform: "translateX(30px) translateY(-20px) rotateZ(-5deg)",
+          },
           "100%": { transform: "translateX(0) translateY(0) rotateZ(0deg)" },
         },
         birdFly2: {
           "0%": { transform: "translateX(0) translateY(0) rotateZ(0deg)" },
-          "50%": { transform: "translateX(25px) translateY(-25px) rotateZ(-5deg)" },
+          "50%": {
+            transform: "translateX(25px) translateY(-25px) rotateZ(-5deg)",
+          },
           "100%": { transform: "translateX(0) translateY(0) rotateZ(0deg)" },
         },
         birdFly3: {
           "0%": { transform: "translateX(0) translateY(0) rotateZ(0deg)" },
-          "50%": { transform: "translateX(-30px) translateY(-20px) rotateZ(5deg)" },
+          "50%": {
+            transform: "translateX(-30px) translateY(-20px) rotateZ(5deg)",
+          },
           "100%": { transform: "translateX(0) translateY(0) rotateZ(0deg)" },
         },
         birdFly4: {
           "0%": { transform: "translateX(0) translateY(0) rotateZ(0deg)" },
-          "50%": { transform: "translateX(-25px) translateY(-25px) rotateZ(5deg)" },
+          "50%": {
+            transform: "translateX(-25px) translateY(-25px) rotateZ(5deg)",
+          },
           "100%": { transform: "translateX(0) translateY(0) rotateZ(0deg)" },
         },
         birdSlideIn1: {

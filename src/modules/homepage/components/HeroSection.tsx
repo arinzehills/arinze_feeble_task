@@ -1,6 +1,4 @@
-import Button from "@components/Button";
-import React, { useState, useEffect } from "react";
-import { Icon } from "@iconify/react";
+import { useState, useEffect } from "react";
 import HeroTextContent from "./HeroTextContent";
 
 const HeroSection = () => {
@@ -14,53 +12,8 @@ const HeroSection = () => {
     return () => clearTimeout(delayTimer);
   }, []);
 
-  const handleStateChange = () => {
-    setIsAnimating(false);
-    setTimeout(() => {
-      setIsAnimating(true);
-    }, 800);
-  };
-
   return (
-    <section
-      className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden"
-      style={{
-        background: "transparent",
-      }}
-    >
-      {/* Background Decorative Blobs */}
-      <div className="absolute inset-0 pointer-events-none z-0">
-        {/* Blob 1 */}
-        <div
-          className="absolute w-96 h-96 bg-blue-start rounded-full blur-3xl opacity-20 animate-float1"
-          style={{
-            top: "25%",
-            left: "10%",
-            borderRadius: "40% 60% 70% 30% / 40% 50% 60% 50%",
-          }}
-        ></div>
-
-        {/* Blob 2 */}
-        <div
-          className="absolute w-80 h-80 bg-blue-end rounded-full blur-3xl opacity-20 animate-float2"
-          style={{
-            top: "50%",
-            right: "15%",
-            borderRadius: "40% 60% 70% 30% / 40% 50% 60% 50%",
-          }}
-        ></div>
-
-        {/* Blob 3 */}
-        <div
-          className="absolute w-96 h-96 bg-accent-color rounded-full blur-3xl opacity-20 animate-float3"
-          style={{
-            bottom: "10%",
-            left: "30%",
-            borderRadius: "40% 60% 70% 30% / 40% 50% 60% 50%",
-          }}
-        ></div>
-      </div>
-
+    <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden">
       {/* Main Hero Content */}
       <HeroTextContent />
 
@@ -73,7 +26,7 @@ const HeroSection = () => {
           }`}
           style={{
             left: "10%",
-            top: "62%",
+            bottom: "6%",
           }}
         >
           <img
@@ -90,7 +43,7 @@ const HeroSection = () => {
           }`}
           style={{
             left: "30%",
-            top: "72%",
+            top: "82%",
           }}
         >
           <img
@@ -106,8 +59,8 @@ const HeroSection = () => {
             isAnimating ? "animate-bird-fly-3" : ""
           }`}
           style={{
-            right: "18%",
-            top: "52%",
+            right: "28%",
+            bottom: "5%",
           }}
         >
           <img
@@ -123,14 +76,14 @@ const HeroSection = () => {
             isAnimating ? "animate-bird-fly-4" : ""
           }`}
           style={{
-            right: "5%",
-            top: "68%",
+            right: "10%",
+            bottom: "18%",
           }}
         >
           <img
             src="/img/bird4.png"
             alt="bird4"
-            className="h-14 w-14 object-contain"
+            className="h-[101px] w-28 object-contain"
           />
         </div>
 
