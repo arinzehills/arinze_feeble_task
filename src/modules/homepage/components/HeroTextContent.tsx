@@ -16,7 +16,7 @@ const HeroTextContent = () => {
         <img
           src="/img/normal-bird.png"
           alt="bird-decoration-1"
-          className="h-12 w-12 object-contain"
+          className="h-[13.96px] w-12 object-contain"
         />
       </div>
 
@@ -31,7 +31,7 @@ const HeroTextContent = () => {
         <img
           src="/img/normal-bird.png"
           alt="bird-decoration-2"
-          className="h-10 w-10 object-contain"
+          className="h-[13.96px] w-10 object-contain"
         />
       </div>
 
@@ -47,7 +47,7 @@ const HeroTextContent = () => {
         <img
           src="/img/normal-bird.png"
           alt="bird-decoration-3"
-          className="h-11 w-11 object-contain"
+          className="h-[13.96px] w-11 object-contain"
         />
       </div>
 
@@ -62,7 +62,7 @@ const HeroTextContent = () => {
         <img
           src="/img/normal-bird.png"
           alt="bird-decoration-4"
-          className="h-10 w-10 object-contain"
+          className="h-[13.96px] w-10 object-contain"
         />
       </div>
 
@@ -103,7 +103,7 @@ const HeroTextContent = () => {
           Get Started
         </Button>
         <button
-          className="flex items-center gap-3
+          className="flex items-center gap-3 h-10
                  px-6 py-3 bg-blue-50 text-black rounded-full font-semibold text-base hover:bg-blue-100 transition-colors"
         >
           <Icon icon="mdi:apple" className="text-xl" />

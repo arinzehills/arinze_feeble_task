@@ -46,6 +46,8 @@ export default {
         "bird-fly-4":
           "birdSlideIn4 0.95s ease-out forwards, birdFly4 3.5s cubic-bezier(0.71, 0.04, 0.83, 0.67) infinite 0.95s",
         cloudSlideIn: "cloudSlideIn 1s ease-out forwards",
+        "bird-cross-left-to-right": "birdCrossLeftToRight 4s cubic-bezier(0.5, 0.2, 0.5, 0.8) infinite 2s",
+        "bird-cross-right-to-left": "birdCrossRightToLeft 4s cubic-bezier(0.5, 0.2, 0.5, 0.8) infinite 2s",
       },
       keyframes: {
         moveUp: {
@@ -174,6 +176,38 @@ export default {
         cloudSlideIn: {
           "0%": { transform: "translateY(50px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        birdCrossLeftToRight: {
+          "0%": {
+            transform: "translateX(-300px) translateY(0px) rotateZ(0deg)",
+            opacity: "0",
+          },
+          "10%": { opacity: "1" },
+          "50%": {
+            transform: "translateX(100px) translateY(-80px) rotateZ(-8deg)",
+            opacity: "1",
+          },
+          "90%": { opacity: "1" },
+          "100%": {
+            transform: "translateX(400px) translateY(-150px) rotateZ(-15deg)",
+            opacity: "0",
+          },
+        },
+        birdCrossRightToLeft: {
+          "0%": {
+            transform: "translateX(300px) translateY(0px) rotateZ(0deg)",
+            opacity: "0",
+          },
+          "10%": { opacity: "1" },
+          "50%": {
+            transform: "translateX(-100px) translateY(-80px) rotateZ(8deg)",
+            opacity: "1",
+          },
+          "90%": { opacity: "1" },
+          "100%": {
+            transform: "translateX(-400px) translateY(-150px) rotateZ(15deg)",
+            opacity: "0",
+          },
         },
       },
     },
