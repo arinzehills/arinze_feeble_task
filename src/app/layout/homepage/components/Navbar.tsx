@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-4 sm:top-8 left-1/2 -translate-x-1/2 z-50 w-full px-4 sm:px-0">
+    <header className="fixed top-4 sm:top-8 left-1/2 -translate-x-1/2 z-50 w-full px-4 sm:px-6 md:px-12 lg:px-8">
       <div className="flex justify-between items-center px-4 sm:px-[20px] py-3 bg-white rounded-full border border-gray-200 shadow-sm max-w-[1200px] mx-auto h-[60px] sm:h-[70px]">
         {/* Logo */}
         <button
