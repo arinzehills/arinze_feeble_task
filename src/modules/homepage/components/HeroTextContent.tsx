@@ -3,66 +3,40 @@ import { Icon } from "@iconify/react";
 
 const HeroTextContent = () => {
   return (
-    <div className="relative z-10 text-center max-w-2xl mx-auto px-5 -mt-40 w-full">
-      {/* Bird 1 - Far right, above text */}
-      <div
-        className="absolute pointer-events-none"
-        style={{
-          left: "-210px",
-          top: "60px",
-          transform: "rotate(-180deg)",
-        }}
-      >
+    <div className="relative z-10 text-center max-w-2xl mx-auto px-4 sm:px-5 -mt-20 sm:-mt-40 w-full">
+      {/* Bird 1 - Left side, above text */}
+      <div className="absolute pointer-events-none -left-16 sm:-left-52 top-2 sm:top-12 -rotate-180  animate-slideUpFromViewportBottom">
         <img
           src="/img/normal-bird.png"
           alt="bird-decoration-1"
-          className="h-[13.96px] w-12 object-contain"
+          className="h-6 w-8 sm:h-3.5 sm:w-12 object-contain"
         />
       </div>
 
-      {/* Bird 2 - Left side, above text */}
-      <div
-        className="absolute pointer-events-none"
-        style={{
-          left: "-30px",
-          top: "120px",
-        }}
-      >
+      {/* Bird 2 - Left side, mid text */}
+      <div className="absolute pointer-events-none -left-20 sm:-left-8 top-20 sm:top-32">
         <img
           src="/img/normal-bird.png"
           alt="bird-decoration-2"
-          className="h-[13.96px] w-10 object-contain"
+          className="h-5 w-8 sm:h-3.5 sm:w-10 object-contain"
         />
       </div>
 
-      {/* Bird 3 - Center-left, near center */}
-      <div
-        className="absolute pointer-events-none"
-        style={{
-          right: "-120px",
-          top: "80px",
-          transform: "translateY(-50%)",
-        }}
-      >
+      {/* Bird 3 - Right side, above text */}
+      <div className="absolute pointer-events-none -right-16 sm:-right-32 top-4 sm:top-8 animate-slideUpFromViewportBottom">
         <img
           src="/img/normal-bird.png"
           alt="bird-decoration-3"
-          className="h-[13.96px] w-11 object-contain"
+          className="h-6 w-8 sm:h-3.5 sm:w-11 object-contain"
         />
       </div>
 
-      {/* Bird 4 - Far left, below text */}
-      <div
-        className="absolute pointer-events-none"
-        style={{
-          right: "-180px",
-          top: "200px",
-        }}
-      >
+      {/* Bird 4 - Right side, mid text */}
+      <div className="absolute pointer-events-none -right-20 sm:-right-44 top-24 sm:top-40">
         <img
           src="/img/normal-bird.png"
           alt="bird-decoration-4"
-          className="h-[13.96px] w-10 object-contain"
+          className="h-5 w-8 sm:h-3.5 sm:w-10 object-contain"
         />
       </div>
 

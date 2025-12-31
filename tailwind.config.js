@@ -46,6 +46,7 @@ export default {
         "bird-fly-4":
           "birdSlideIn4 0.95s ease-out forwards, birdFly4 3.5s cubic-bezier(0.71, 0.04, 0.83, 0.67) infinite 0.95s",
         cloudSlideIn: "cloudSlideIn 1s ease-out forwards",
+        slideUpFromViewportBottom: "slideUpFromViewportBottom 1.5s ease-out forwards",
         "bird-cross-left-to-right": "birdCrossLeftToRight 4s cubic-bezier(0.5, 0.2, 0.5, 0.8) infinite 2s",
         "bird-cross-right-to-left": "birdCrossRightToLeft 4s cubic-bezier(0.5, 0.2, 0.5, 0.8) infinite 2s",
       },
@@ -175,6 +176,10 @@ export default {
         },
         cloudSlideIn: {
           "0%": { transform: "translateY(50px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        slideUpFromViewportBottom: {
+          "0%": { transform: "translateY(100vh)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
         birdCrossLeftToRight: {
